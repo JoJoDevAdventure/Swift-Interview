@@ -1,22 +1,41 @@
-# Concurrency & Threads : 
+# Queues : 
 
-## What is concurrency? 
+## What are Queues? 
 
-Concurrency is doing multiple tasks in the same time. 
+<div align="center">
+like a queue of peoples waiting to enter a cinema or theatre, <br>
+Queues are also tasks waiting to be executed in the program, <br>
+The most used Queue is FIFO, First In First Out, 
+first task that asks to get executed have priority.
+</div>
+<br>
 
-The more cores you have, the more tasks you can execute at  the same time.  
+![Screenshot 2022-05-26 at 23 36 01](https://user-images.githubusercontent.com/89042174/170590724-0f40c654-6795-40a3-ab97-b7785e8a66df.png)
+## There are two types of Queues: 
 
-Threads are like the path that tasks take.
+### Serial Queues :
 
-## There are two types of threads: 
+#### Task 2 waits for task 1 to finish
 
-### Main   Background
+<br>
 
-#### Main thread:  
-Fast, For UI, light tasks..
-#### Back thread:
-Slower, For heavy tasks...
+![Screenshot 2022-05-26 at 23 41 25](https://user-images.githubusercontent.com/89042174/170591763-51819ba7-84ae-430c-887a-c36fd484deb0.png)
 
-![Aspose Words f029770a-b13b-481b-b2fb-fde073a8d16f 001](https://user-images.githubusercontent.com/89042174/170587998-ec008171-363e-4f79-9876-f4784eb6d15a.jpeg)
+<br>
 
-(on the left is a representation of Main thread, and right the Back Thread)
+#### Pros :
+We can predict the order of execution.
+#### Cons : 
+Slow execution since every task needs to wait the turn to begin execution.
+### Concurent Queues :
+#### All tasks execute together.
+<br>
+
+![Screenshot 2022-05-26 at 23 46 22](https://user-images.githubusercontent.com/89042174/170591753-9c07aad1-77ed-4688-8bc1-93e7437533f4.png)
+
+<br>
+
+#### Pros :
+We can predict the order of execution.
+#### Cons : 
+Slow execution since every task needs to wait the turn to begin execution.
